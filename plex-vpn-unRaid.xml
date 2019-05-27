@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+    <Name Default="Plex-vpn">Plex-vpn</Name>
+    <Overview>Instance of plex but connected to a VPN tunnel</Overview>
+    <Registry>https://github.com/nanouke/docker-containers/tree/master/plex-openvpn</Registry>
+    <Privileged>true</Privileged>
+</Container>
