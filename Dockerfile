@@ -1,9 +1,10 @@
 FROM plexinc/pms-docker
 
-RUN \
-    # UPDATE Package Before install
-    apt-get update && \
-    # INSTALL OpenVPN CLient
-    apt-get install -y openvpn 
+ADD ressources/*.sh /root/
 
-CMD openvpn /etc/openvpn/client.conf
+RUN chmod +x /root/*.sh && \
+/bin/bash /root/install.sh
+
+VOLUME /config
+
+ENTRYPOINT [ "/bin/bash", "/root/init.sh" ]

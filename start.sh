@@ -1,1 +1,1 @@
-sudo docker run -it --cap-add=NET_ADMIN --device /dev/net/tun -p 32400:32400 -v /home/nanouke/testVpn:/etc/openvpn plex-vpn
+sudo docker run -it --cap-add=NET_ADMIN --device /dev/net/tun -p 32400:32400 -v /home/nanouke/testVpn:/config plex-vpn
