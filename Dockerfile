@@ -7,4 +7,4 @@ RUN chmod +x /root/*.sh && \
 
 VOLUME /config
 
-ENTRYPOINT [ "/bin/bash", "/root/init.sh", "/init" ]
+ENTRYPOINT [ "/bin/bash", "/init" ,"/root/init.sh" ]
