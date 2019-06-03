@@ -9,4 +9,5 @@ fi
 
 echo "[info] OpenVPN config file (ovpn extension) is located at ${VPN_CONFIG}" 
 
+echo "Connect to the vpn"
 openvpn ${VPN_CONFIG}
